@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 30303727}
   - component: {fileID: 30303726}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: LockPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 13dbd0330c79f4b3eb1f687b8ff26891, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -491,12 +491,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4eabc112e8b41aca14a91075e8cb5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
   lockCrosshair: {fileID: 0}
   mainCamera: {fileID: 0}
-  interactionThreshold: 5
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &907292807
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +932,7 @@ GameObject:
   - component: {fileID: 1206975541}
   - component: {fileID: 1206975540}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: CrossHairPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +995,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 13dbd0330c79f4b3eb1f687b8ff26891, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

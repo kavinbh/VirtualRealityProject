@@ -49,7 +49,18 @@ public class HeadTrackingInteraction : MonoBehaviour
         {
             if (hit.transform.CompareTag("Interactable"))
             {
-                hit.transform.position += Vector3.up * 0.5f;
+                // Call interaction methods based on the attached scripts
+                InteractableObject interactable = hit.transform.GetComponent<InteractableObject>();
+                if (interactable != null)
+                {
+                    interactable.OnInteract(); // Perform the interaction
+                }
+
+                Orbit orbit = hit.transform.GetComponent<Orbit>();
+                if (orbit != null)
+                {
+                    orbit.ToggleOrbit(); // Toggle the orbiting behavior if the object has an Orbit script
+                }
             }
         }
     }

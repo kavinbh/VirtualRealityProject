@@ -456,6 +456,8 @@ GameObject:
   m_Component:
   - component: {fileID: 573147681}
   - component: {fileID: 573147682}
+  - component: {fileID: 573147684}
+  - component: {fileID: 573147683}
   m_Layer: 0
   m_Name: Crosshair
   m_TagString: Untagged
@@ -494,6 +496,39 @@ MonoBehaviour:
   crosshair: {fileID: 0}
   lockCrosshair: {fileID: 0}
   mainCamera: {fileID: 0}
+--- !u!114 &573147683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573147680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4eabc112e8b41aca14a91075e8cb5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  lockCrosshair: {fileID: 0}
+  mainCamera: {fileID: 0}
+--- !u!114 &573147684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573147680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba30ed4f0cf9480da1f5e272f8c78ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  lockCrosshair: {fileID: 0}
+  mainCamera: {fileID: 0}
+  requiredAlignmentAngle: 10
+  defaultCrosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightCrosshairColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &907292807
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907292808}
+  - component: {fileID: 907292809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -526,6 +562,21 @@ Transform:
   - {fileID: 959308593}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &907292809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907292807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4eabc112e8b41aca14a91075e8cb5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  lockCrosshair: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!1 &955127915
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +756,7 @@ GameObject:
   - component: {fileID: 959308591}
   - component: {fileID: 959308589}
   - component: {fileID: 959308594}
+  - component: {fileID: 959308595}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -882,6 +934,24 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &959308595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959308587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba30ed4f0cf9480da1f5e272f8c78ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  lockCrosshair: {fileID: 0}
+  mainCamera: {fileID: 0}
+  requiredAlignmentAngle: 10
+  defaultCrosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightCrosshairColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1199920616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1254,7 @@ GameObject:
   - component: {fileID: 1442670452}
   - component: {fileID: 1442670451}
   - component: {fileID: 1442670450}
+  - component: {fileID: 1442670454}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1278,6 +1349,19 @@ Transform:
   - {fileID: 1487103221}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442670454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442670449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd58a94872dc64c5ca1ea79c5b239d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
 --- !u!1 &1487103220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,6 +1962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909226808}
+  - component: {fileID: 1909226809}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -1901,6 +1986,24 @@ Transform:
   - {fileID: 30303725}
   m_Father: {fileID: 959308593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1909226809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909226807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba30ed4f0cf9480da1f5e272f8c78ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 0}
+  lockCrosshair: {fileID: 0}
+  mainCamera: {fileID: 0}
+  requiredAlignmentAngle: 10
+  defaultCrosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightCrosshairColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
